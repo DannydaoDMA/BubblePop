@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DynaPuff', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #d9b6db, #c46ccc,#d9b6db,#ffffff)
+}
+
+#bubblepop {
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+    z-index: 0;
+}
+
+#saturn {
+    position: absolute;
+    top: 25vw;
+    left: 70vw;
+    z-index: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 0vw;
+    right: 10vw;
+}
+
+h2 {
+    position: absolute;
+    top: 95%;
+    left: 8vw;
+}
+
+p {
+    position: relative;
+    font-size: 9vw;
+    font-weight: 700;
+    text-align: center;
+    line-height: 2em;
+    z-index: 2;
+    transform: skewY(-5deg);
+    text-shadow: 1px 1px 0 #cccccc,
+                 2px 2px 0 #cccccc,
+                 3px 3px 0 #cccccc,
+                 4px 4px 0 #cccccc,
+                 5px 5px 0 #cccccc;
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%,100% {
+        transform: skewY(-7deg) translate(0,-20px);
+    }
+
+    50% {
+        transform:skewY(-7deg) translate(0,20px);
+    }
+}
+
+a, a:visited, a:link {
+    color: #ff69b4;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
