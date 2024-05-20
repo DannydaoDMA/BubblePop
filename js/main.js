@@ -4,7 +4,7 @@ import { OrbitControls } from 'https://unpkg.com/three@0.146/examples/jsm/contro
 import { FontLoader } from 'https://unpkg.com/three@0.138.3/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'https://unpkg.com/three@0.138.3/examples/jsm/geometries/TextGeometry.js';
 import { createSculptureWithGeometry } from 'https://unpkg.com/shader-park-core/dist/shader-park-core.esm.js';
-import { spCode } from '/bubblepop/js/shader.js';
+import { spCode } from './js/shader.js';
 
 let scene = new Scene();
 scene.background = new Color (0x000000);
